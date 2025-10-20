@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevPortfolio - Lập Trình Viên Sáng Tạo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+      <div class="nav-dots">
+        <a href="#home" class="nav-dot active" data-section="home">
+          <span class="dot"></span>
+          <span class="label">Home</span>
+        </a>
+        <a href="#about" class="nav-dot" data-section="about">
+          <span class="dot"></span>
+          <span class="label">About</span>
+        </a>
+        <a href="#skills" class="nav-dot" data-section="skills">
+          <span class="dot"></span>
+          <span class="label">Skills</span>
+        </a>
+        <a href="#projects" class="nav-dot" data-section="projects">
+          <span class="dot"></span>
+          <span class="label">Work</span>
+        </a>
+        <a href="#contact" class="nav-dot" data-section="contact">
+          <span class="dot"></span>
+          <span class="label">Contact</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+      <button class="theme-btn" id="themeToggle">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="matrix-bg"></div>
+        <div class="particles"></div>
+      </div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="greeting">
+              <span class="greeting-text">Xin chào, tôi là</span>
+            </div>
+            <h1 class="hero-title">
+              <span class="name">Lập Trình Viên</span>
+              <span class="title-role">Full Stack Developer</span>
+            </h1>
+            <div class="typing-text">
+              <span class="typing-cursor">|</span>
+              <span class="typing-content"
+                >Tạo ra những sản phẩm công nghệ tuyệt vời</span
+              >
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-number" data-target="3">1</span>
+                <span class="stat-label">Năm kinh nghiệm</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-target="100">1</span>
+                <span class="stat-label">% Tận tâm</span>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span>Xem công việc</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <span>Kết nối</span>
+                <i class="fas fa-comment"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="code-window">
+              <div class="window-header">
+                <div class="window-controls">
+                  <span class="control close"></span>
+                  <span class="control minimize"></span>
+                  <span class="control maximize"></span>
+                </div>
+                <div class="window-title">portfolio.js</div>
+              </div>
+              <div class="window-content">
+                <div class="code-line">
+                  <span class="line-number">1</span>
+                  <span class="code-text"
+                    ><span class="keyword">const</span>
+                    <span class="variable">developer</span> = {</span
+                  >
+                </div>
+                <div class="code-line">
+                  <span class="line-number">2</span>
+                  <span class="code-text">
+                    <span class="property">name</span>:
+                    <span class="string">'Lập Trình Viên'</span>,</span
+                  >
+                </div>
+                <div class="code-line">
+                  <span class="line-number">3</span>
+                  <span class="code-text">
+                    <span class="property">skills</span>: [<span class="string"
+                      >'JavaScript'</span
+                    >, <span class="string">'React'</span>,
+                    <span class="string">'Node.js'</span>],</span
+                  >
+                </div>
+                <div class="code-line">
+                  <span class="line-number">4</span>
+                  <span class="code-text">
+                    <span class="property">passion</span>:
+                    <span class="string"
+                      >'Tạo ra sản phẩm tuyệt vời'</span
+                    ></span
+                  >
+                </div>
+                <div class="code-line">
+                  <span class="line-number">5</span>
+                  <span class="code-text">};</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <div class="scroll-text">Cuộn xuống</div>
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-subtitle">
+            Câu chuyện của một lập trình viên đam mê
+          </p>
+        </div>
+
+        <div
+          class="about-content"
+          style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center"
+        >
+          <!-- Cột trái: 2 ảnh cá nhân -->
+          <div
+            class="about-left"
+            style="
+              flex: 1;
+              min-width: 250px;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+            "
+          >
+            <div class="profile-image">
+              <img
+                src="nngan.jpg"
+                alt="Ảnh cá nhân Trúc Ngân 1"
+                style="
+                  width: 100%;
+                  max-width: 250px;
+                  border-radius: 15px;
+                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                "
+              />
+            </div>
+            <div class="profile-image">
+              <img
+                src="trucngan.jpg"
+                alt="Ảnh cá nhân Trúc Ngân 2"
+                style="
+                  width: 100%;
+                  max-width: 250px;
+                  border-radius: 15px;
+                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                "
+              />
+            </div>
+          </div>
+
+          <!-- Cột phải: Text + Hexagon + Interests -->
+          <div class="about-right" style="flex: 2; min-width: 300px">
+            <div class="text-block">
+              <h3>Hành trình của tôi</h3>
+              <p>
+                Xin chào, mình tên là Trúc Ngân, sinh viên năm 3 của trường ĐH
+                Giao Thông Vận Tải TPHCM. Mình yêu thích lập trình và luôn muốn
+                học hỏi thêm. Từ những tò mò ban đầu với công nghệ, mình đã bước
+                vào hành trình lập trình, nơi mỗi dòng code đều kể một câu
+                chuyện về sáng tạo và nhiệt huyết.
+              </p>
+            </div>
+            <div class="text-block">
+              <p>
+                Tôi thành thạo các công nghệ như C++, React, Node.js và
+                TypeScript, đồng thời luôn háo hức học hỏi để nắm bắt những xu
+                hướng mới. Mục tiêu của tôi không chỉ là viết code, mà còn xây
+                dựng những trải nghiệm số có giá trị lâu dài và tạo tác động
+                tích cực.
+              </p>
+            </div>
+
+            <!-- Hexagon + Floating Icons -->
+            <div class="about-visual" style="margin: 20px 0">
+              <div class="hexagon-container">
+                <div class="hexagon">
+                  <div class="hexagon-inner">
+                    <i class="fas fa-code"></i>
+                  </div>
+                </div>
+                <div class="floating-elements">
+                  <div class="floating-element" style="--delay: 0s">
+                    <i class="fab fa-js-square"></i>
+                  </div>
+                  <div class="floating-element" style="--delay: 1s">
+                    <i class="fab fa-react"></i>
+                  </div>
+                  <div class="floating-element" style="--delay: 2s">
+                    <i class="fab fa-node-js"></i>
+                  </div>
+                  <div class="floating-element" style="--delay: 3s">
+                    <i class="fab fa-python"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interests -->
+            <div
+              class="interests-grid"
+              style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 20px;
+              "
+            >
+              <div class="interest-item" style="text-align: center">
+                <div class="interest-icon">
+                  <i
+                    class="fas fa-laptop-code"
+                    style="font-size: 24px; color: #ff7f50"
+                  ></i>
+                </div>
+                <h4>Lập trình</h4>
+                <p>Đam mê tạo ra những ứng dụng tuyệt vời</p>
+              </div>
+              <div class="interest-item" style="text-align: center">
+                <div class="interest-icon">
+                  <i
+                    class="fas fa-gamepad"
+                    style="font-size: 24px; color: #ff7f50"
+                  ></i>
+                </div>
+                <h4>Game Dev</h4>
+                <p>Nghiên cứu và phát triển game</p>
+              </div>
+              <div class="interest-item" style="text-align: center">
+                <div class="interest-icon">
+                  <i
+                    class="fas fa-brain"
+                    style="font-size: 24px; color: #ff7f50"
+                  ></i>
+                </div>
+                <h4>AI/ML</h4>
+                <p>Khám phá trí tuệ nhân tạo</p>
+              </div>
+              <div class="interest-item" style="text-align: center">
+                <div class="interest-icon">
+                  <i
+                    class="fas fa-music"
+                    style="font-size: 24px; color: #ff7f50"
+                  ></i>
+                </div>
+                <h4>Âm nhạc</h4>
+                <p>Thể loại nhẹ nhàng</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Kỹ năng chuyên môn</h2>
+          <p class="section-subtitle">Các công nghệ và công cụ tôi sử dụng</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend Development</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Backend Development</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>MySQL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-php"></i>
+                <span>PHP</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Others</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-docker"></i>
+                <span>Docker</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="70%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-aws"></i>
+                <span>AWS</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="65%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Mobile Dev</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="60%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Dự án nổi bật</h2>
+          <p class="section-subtitle">Một số dự án tôi đã thực hiện</p>
+        </div>
+
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-gem"></i>
+            </div>
+            <div class="project-content">
+              <h3>Website Đấu Giá Trang Sức</h3>
+              <p>
+                Nền tảng trực tuyến cho phép người dùng tham gia đấu giá các sản
+                phẩm trang sức cao cấp. Hệ thống hỗ trợ đăng sản phẩm, đặt giá
+                thầu và quản lý người dùng một cách an toàn, minh bạch.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/HieuPT2212/Nhom9_CNPM"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="project-content">
+              <h3>GameHub Platform</h3>
+              <p>
+                Nền tảng chia sẻ và quản lý trò chơi trực tuyến, nơi người dùng
+                có thể khám phá các tựa game mới, lưu trữ danh sách game yêu
+                thích và kết nối với cộng đồng game thủ. Dự án được phát triển
+                hướng đến trải nghiệm mượt mà và giao diện thân thiện.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Danhtran07/gamehubplatform"
+                  class="project-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Liên hệ với tôi</h2>
+          <p class="section-subtitle">
+            Hãy kết nối và cùng tạo ra những điều tuyệt vời
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>nguyenthitrngan@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Điện thoại</h4>
+                <p>+84 379 908 219</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Địa chỉ</h4>
+                <p>Phường 26, Nguyễn Xí, Bình Thạnh, TPHCM</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/trucngan1612"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a
+                href="https://web.facebook.com/truc.ngan.643927"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/lnchig.20/"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form>
+              <div class="form-group">
+                <input type="text" placeholder="Họ và tên" required />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Email" required />
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Chủ đề" required />
+              </div>
+              <div class="form-group">
+                <textarea
+                  placeholder="Nội dung tin nhắn"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Gửi tin nhắn
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Trúc Ngân. Tất cả quyền được bảo lưu.</p>
+          <p>Được tạo với <i class="fas fa-heart"></i> và đam mê công nghệ</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
